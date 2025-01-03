@@ -28,8 +28,8 @@ def process_dataset(dirname, filename):
             img_id = entry['id']  
             image = entry['image']  
     
-            # Convert image to RGB if it is in RGBA mode  
-            if image.mode == 'RGBA':  
+            # Convert image to RGB if it is in RGBA or P mode  
+            if image.mode in ['RGBA', 'P']:  
                 image = image.convert('RGB')  
     
             # Determine the image filename and path  
@@ -55,7 +55,7 @@ def process_dataset(dirname, filename):
             return new_entry  
         except Exception as e:  
             print(f"Error processing entry with id {entry['id']}: {e}")  
-            return None  
+            return None   
   
     # 使用map和多进程处理数据，添加tqdm显示进度  
     # train_data = train_data.select(range(10))
