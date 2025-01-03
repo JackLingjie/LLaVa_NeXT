@@ -1,4 +1,11 @@
 {
+  "GeoQA+(MathV360K)": "MathV360K_GeoQA+_17172.json",
+  "GEOS(MathV360K)": "MathV360K_GEOS_508.json",
+  "IconQA(MathV360K)": "MathV360K_IconQA_22599.json",
+  "MapQA(MathV360K)": "MathV360K_MapQA_5235.json",
+  "PMC-VQA(MathV360K)": "MathV360K_PMC-VQA_35958.json",
+  "Super-CLEVR(MathV360K)": "MathV360K_Super-CLEVR_8652.json",
+  "TabMWP(MathV360K)": "MathV360K_TabMWP_22462.json",
   "UniGeo(MathV360K)": "MathV360K_UniGeo_11959.json",
   "VizWiz(MathV360K)": "MathV360K_VizWiz_6614.json",
   "magpie_pro(qwen2_72b_st)": "magpie_pro_qwen2_72b_st_300000_sp_token_fltd_299992.json",
