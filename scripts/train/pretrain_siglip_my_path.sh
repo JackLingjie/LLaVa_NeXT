@@ -20,7 +20,7 @@ echo "BASE_RUN_NAME: ${BASE_RUN_NAME}"
 
 ACCELERATE_CPU_AFFINITY=1 torchrun --nproc_per_node="${NUM_GPUS}" \
     llava/train/train_mem.py \
-    --deepspeed scripts/zero0.json \
+    --deepspeed scripts/zero2.json \
     --model_name_or_path ${LLM_VERSION} \
     --version ${PROMPT_VERSION} \
     --data_path /mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-Pretrain/blip_laion_cc_sbu_558k.json \
