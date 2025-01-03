@@ -1,2 +1,4 @@
 // "ureader_kg": "ureader_kg_sft.json",
 // "ureader_qa": "ureader_qa_sft.json",
+No image
+"magpie_pro(qwen2_72b_st)": "magpie_pro_qwen2_72b_st_300000_sp_token_fltd_299992.json",
