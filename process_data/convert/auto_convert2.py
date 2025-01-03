@@ -77,5 +77,5 @@ with open(file_path, 'r') as file:
     dirname2filename = json.load(file)  
   
 # 对于每个键值对，处理数据集  
-for dirname, filename in tqdm(dirname2filename.items()[:1], desc="Processing Datasets"):  
+for dirname, filename in tqdm(dirname2filename.items(), desc="Processing Datasets"):  
     process_dataset(dirname, filename)  
