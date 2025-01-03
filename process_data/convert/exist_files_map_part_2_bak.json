@@ -1,4 +1,5 @@
 {
+  "textcaps": "textcaps_train_21952.json",
   "ureader_cap": "ureader_cap_sft.json",
   "ureader_ie": "ureader_ie_sft.json",
   "vision_flan(filtered)": "vision_flan_filtered_186070.json",
