@@ -52,6 +52,6 @@ ACCELERATE_CPU_AFFINITY=1 torchrun --nproc_per_node="${NUM_GPUS}" \
     --lazy_preprocess True \
     --report_to tensorboard \
     --run_name $BASE_RUN_NAME \
-    --attn_implementation sdpa
+    # --attn_implementation sdpa
 
 # You can delete the sdpa attn_implementation if you want to use flash attn
