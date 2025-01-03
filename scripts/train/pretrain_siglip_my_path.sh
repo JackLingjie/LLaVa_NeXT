@@ -14,7 +14,7 @@ VISION_MODEL_VERSION_CLEAN="siglip-so400m-patch14-384"
 ############### Pretrain ################
 
 PROMPT_VERSION=plain
-NUM_GPUS=1
+NUM_GPUS=8
 BASE_RUN_NAME="llavanext-${VISION_MODEL_VERSION_CLEAN}-${LLM_VERSION_CLEAN}-mlp2x_gelu-pretrain_blip558k_plain"
 echo "BASE_RUN_NAME: ${BASE_RUN_NAME}"
 
