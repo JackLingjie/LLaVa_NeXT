@@ -1,0 +1,19 @@
+{
+  "chart2text(cauldron)": "chart2text_26961.json",
+  "chartqa(cauldron,llava_format)": "chartqa_18265_llava_format.json",
+  "clevr(cauldron,llava_format)": "clevr_70000_llava_format.json",
+  "diagram_image_to_text(cauldron)": "diagram_image_to_text_300.json",
+  "dvqa(cauldron,llava_format)": "dvqa_200000_llava_format.json",
+  "figureqa(cauldron,llava_format)": "figureqa_100000_llava_format.json",
+  "geomverse(cauldron)": "geomverse_9303.json",
+  "hateful_memes(cauldron,llava_format)": "hateful_memes_8500_llava_format.json",
+  "hitab(cauldron,llava_format)": "hitab_2500_llava_format.json",
+  "iam(cauldron)": "iam_5663.json",
+  "raven(cauldron)": "raven_42000.json",
+  "iconqa(cauldron,llava_format)": "iconqa_llava_format_27307.json",
+  "infographic_vqa_llava_format": "infographic_vqa_2118_llava_format.json",
+  "intergps(cauldron,llava_format)": "intergps_1280_llava_format.json",
+  "mapqa(cauldron,llava_format)": "mapqa_37417_llava_format.json",
+  "multihiertt(cauldron)": "multihiertt_7619.json",
+  "rendered_text(cauldron)": "rendered_text_10000.json"
+}

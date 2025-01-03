@@ -1,0 +1,17 @@
+{
+  "robut_sqa(cauldron)": "robut_sqa_8514.json",
+  "robut_wikisql(cauldron)": "robut_wikisql_74989.json",
+  "robut_wtq(cauldron,llava_format)": "robut_wtq_38246_llava_format.json",
+  "screen2words(cauldron)": "screen2words_15730.json",
+  "scienceqa(cauldron,llava_format)": "scienceqa_llava_format_4976.json",
+  "tabmwp(cauldron)": "tabmwp_22722.json",
+  "tallyqa(cauldron,llava_format)": "tallyqa_98680_llava_format.json",
+  "st_vqa(cauldron,llava_format)": "st_vqa_17247_llava_format.json",
+  "tqa(cauldron,llava_format)": "tqa_llava_format_27307.json",
+  "visual7w(cauldron,llava_format)": "visual7w_llava_format_14366.json",
+  "visualmrc(cauldron)": "visualmrc_3027.json",
+  "vqarad(cauldron,llava_format)": "vqarad_313_llava_format.json",
+  "vsr(cauldron,llava_format)": "vsr_2157_llava_format.json",
+  "vistext(cauldron)": "vistext_9969.json",
+  "websight(cauldron)": "websight_10000.json"
+}

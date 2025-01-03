@@ -3,15 +3,22 @@ from datasets import load_dataset
 from multiprocessing import cpu_count  
 import os  
 from PIL import Image  
-  
+
+with open('convert/exist_files_map.json', 'r') as file:
+    dirname2filename = json.load(file)
 # 加载数据集  
-ds = load_dataset("/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Data/CLEVR-Math(MathV360K)")  
+dirname = "MathV360K_CLEVR-Math_5290"
+path = f"/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Data/{dirname}"
+ds = load_dataset(path)  
 train_data = ds["train"]  
-  
+IMAGE_PATH = f"{dirname}_images"
+
 # 定义图像和JSON文件的输出路径  
-output_image_path = "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-Stage2-Si/MathV360K_CLEVR-Math_5290_images"  
-output_json_file = "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-Stage2-Si/MathV360K_CLEVR-Math_5290.json"  
-  
+output_image_path = f"/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-Stage2-Si/{IMAGE_PATH}/"  
+output_json_file = f"/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-Stage2-Si/{dirname2filename[dirname]}_stage2_si.json"  
+
+print(f"output_image_path: {output_image_path}")
+print(f"output_json_file: {output_json_file}")
 # 确保图像输出目录存在  
 os.makedirs(output_image_path, exist_ok=True)  
   
@@ -37,7 +44,7 @@ def process_entry(entry):
         # Create the new data entry  
         new_entry = {  
             "id": img_id,  
-            "image_temp": f"MathV360K_CLEVR-Math_5290_images/{image_filename}",  
+            "image_temp": f"{IMAGE_PATH}/{image_filename}",  
             "conversations": conversations  
         }  
           
