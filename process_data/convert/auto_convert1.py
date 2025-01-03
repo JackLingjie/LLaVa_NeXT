@@ -27,24 +27,32 @@ def process_dataset(dirname, filename):
             # Extract the id and image  
             img_id = entry['id']  
             image = entry['image']  
-  
-            # Save the image to the specified location  
+    
+            # Convert image to RGB if it is in RGBA mode  
+            if image.mode == 'RGBA':  
+                image = image.convert('RGB')  
+    
+            # Determine the image filename and path  
             image_filename = f"{img_id}.jpg"  
             image_path = os.path.join(output_image_path, image_filename)  
+    
+            # Ensure the directory exists  
+            os.makedirs(os.path.dirname(image_path), exist_ok=True)  
+    
+            # Save the image to the specified location  
             image.save(image_path)  
-  
+    
             # Modify the conversations to include the new prompt  
             conversations = entry['conversations']  
-
+            
             # Create the new data entry  
             new_entry = {  
                 "id": img_id,  
                 "image_temp": f"{IMAGE_PATH}/{image_filename}",  
                 "conversations": conversations  
             }  
-  
+    
             return new_entry  
-  
         except Exception as e:  
             print(f"Error processing entry with id {entry['id']}: {e}")  
             return None  
