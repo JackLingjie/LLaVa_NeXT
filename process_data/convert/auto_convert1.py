@@ -50,7 +50,7 @@ def process_dataset(dirname, filename):
             return None  
   
     # 使用map和多进程处理数据，添加tqdm显示进度  
-    train_data = train_data.select(range(10))
+    # train_data = train_data.select(range(10))
     processed_data = train_data.map(lambda entry: process_entry(entry), num_proc=cpu_count())  
   
     # 将处理后的数据转换为字典列表  
@@ -59,7 +59,6 @@ def process_dataset(dirname, filename):
         if entry is not None:  
             # 删除 image_temp 并将其替换为 image  
             entry['image'] = entry.pop('image_temp')  
-            # 删除 data_source 键   
             processed_data_list.append(entry)  
   
     # 将处理后的数据保存到JSON文件  
@@ -78,5 +77,4 @@ with open(file_path, 'r') as file:
   
 # 对于每个键值对，处理数据集  
 for dirname, filename in tqdm(dirname2filename.items(), desc="Processing Datasets"):  
-    process_dataset(dirname, filename)
-    break  
+    process_dataset(dirname, filename)  
