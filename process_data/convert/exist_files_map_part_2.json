@@ -1,9 +1,9 @@
 {
   "textcaps": "textcaps_train_21952.json",
-  "ureader_qa": "ureader_qa_sft.json",
+
   "ureader_cap": "ureader_cap_sft.json",
   "ureader_ie": "ureader_ie_sft.json",
-  "ureader_kg": "ureader_kg_sft.json",
+
   "vision_flan(filtered)": "vision_flan_filtered_186070.json",
   "mathqa": "mathqa_29837.json",
   "geo3k": "geo3k_2101.json",
