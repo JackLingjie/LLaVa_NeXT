@@ -4,7 +4,8 @@ from multiprocessing import cpu_count
 import os  
 from PIL import Image  
 from tqdm import tqdm  
-  
+import uuid  
+
 def process_dataset(dirname, filename):  
     # 加载数据集  
     path = f"/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Data/{dirname}"  
@@ -24,8 +25,12 @@ def process_dataset(dirname, filename):
   
     def process_entry(entry):  
         try:  
-            # Extract the id and image  
-            img_id = entry['id']  
+            # Check if 'id' key exists, if not, generate a unique id  
+            if 'id' not in entry:  
+                img_id = str(uuid.uuid4())  # Generate a unique id  
+            else:  
+                img_id = entry['id']  
+    
             image = entry['image']  
     
             # Convert image to RGB if it is in RGBA or P mode  
@@ -54,8 +59,8 @@ def process_dataset(dirname, filename):
     
             return new_entry  
         except Exception as e:  
-            print(f"Error processing entry with id {entry['id']}: {e}")  
-            return None   
+            print(f"Error processing entry: {e}")  
+            return None    
   
     # 使用map和多进程处理数据，添加tqdm显示进度  
     # train_data = train_data.select(range(10))
