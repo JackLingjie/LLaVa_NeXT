@@ -14,7 +14,7 @@ VISION_MODEL_VERSION_CLEAN="siglip-so400m-patch14-384"
 
 PROMPT_VERSION="qwen_2_5"
 
-MAX_MODEL_LEN=11264
+MAX_MODEL_LEN=240
 
 BASE_RUN_NAME="llavanext-${VISION_MODEL_VERSION_CLEAN}-${LLM_VERSION_CLEAN}-mlp2x_gelu-mid_stage"
 echo "BASE_RUN_NAME: ${BASE_RUN_NAME}"
@@ -22,7 +22,7 @@ MID_RUN_NAME="llavanext-${VISION_MODEL_VERSION_CLEAN}-${LLM_VERSION_CLEAN}-mlp2x
 echo "MID_RUN_NAME: ${MID_RUN_NAME}"
 
 CKPT_PATH=$LLM_VERSION # this could also be the previous stage checkpoint
-NUM_GPUS=8
+NUM_GPUS=1
 
 ACCELERATE_CPU_AFFINITY=1 torchrun --nproc_per_node="${NUM_GPUS}" \
     llava/train/train_mem.py \
