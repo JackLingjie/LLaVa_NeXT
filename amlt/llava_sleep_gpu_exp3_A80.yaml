@@ -15,7 +15,7 @@ description: vlm_train
 
 target:
   service: sing
-  name: msrresrchvc
+  name: msroctobasicvc
   resource_group: gcr-singularity-octo
   # workspace_name: Workspace_NLC
   workspace_name: NLC_Workspace
