@@ -12,7 +12,7 @@ VISION_MODEL_VERSION_CLEAN="siglip-so400m-patch14-384"
 
 ############### Pretrain ################
 
-PROMPT_VERSION="qwen_1_5"
+PROMPT_VERSION="qwen_2_5"
 
 MAX_MODEL_LEN=11264
 
