@@ -73,7 +73,7 @@ search:
     # sku: 2x40G8-A100-IB-NvLink
     identity: managed
     mpi: True
-    sla_tier: premium
+    sla_tier: Basic
     process_count_per_node: 1
     command:
     - pip install -e ".[torch,metrics]"
