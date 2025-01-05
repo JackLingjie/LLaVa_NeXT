@@ -27,6 +27,7 @@ NUM_GPUS=8
 ACCELERATE_CPU_AFFINITY=1 torchrun --nproc_per_node="${NUM_GPUS}" \
     llava/train/train_mem.py \
     --deepspeed scripts/zero3.json \
+    --lora_enable True --lora_r 128 --lora_alpha 256 \
     --model_name_or_path ${CKPT_PATH} \
     --version ${PROMPT_VERSION} \
     --data_path scripts/train/mid_stage_mypath.yaml \
@@ -47,7 +48,7 @@ ACCELERATE_CPU_AFFINITY=1 torchrun --nproc_per_node="${NUM_GPUS}" \
     --run_name $MID_RUN_NAME \
     --output_dir "/mnt/lingjiejiang/multimodal_code/checkpoints/vlms/${MID_RUN_NAME}" \
     --num_train_epochs 1 \
-    --per_device_train_batch_size 4 \
+    --per_device_train_batch_size 2 \
     --per_device_eval_batch_size 2 \
     --gradient_accumulation_steps 8 \
     --evaluation_strategy "no" \
