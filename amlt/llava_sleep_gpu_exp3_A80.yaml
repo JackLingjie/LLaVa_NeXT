@@ -69,7 +69,7 @@ storage:
 search:
   job_template:
     name: vlm_exp
-    sku: G7
+    sku: 10x40G8-A100-IB-NvLink
     # sku: 2x40G8-A100-IB-NvLink
     identity: managed
     mpi: True
