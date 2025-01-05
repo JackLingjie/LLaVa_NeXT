@@ -27,7 +27,7 @@ NUM_GPUS=8
 ACCELERATE_CPU_AFFINITY=1 torchrun --nproc_per_node="${NUM_GPUS}" \
     llava/train/train_mem.py \
     --deepspeed scripts/zero3.json \
-    --lora_enable True --lora_r 64 --lora_alpha 16 \
+    --lora_enable True --lora_r 32 --lora_alpha 16 \
     --model_name_or_path ${CKPT_PATH} \
     --version ${PROMPT_VERSION} \
     --data_path scripts/train/mid_stage_mypath.yaml \
