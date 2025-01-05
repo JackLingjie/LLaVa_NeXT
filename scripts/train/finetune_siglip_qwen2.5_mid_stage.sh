@@ -13,10 +13,11 @@ VISION_MODEL_VERSION_CLEAN="siglip-so400m-patch14-384"
 ############### Pretrain ################
 
 PROMPT_VERSION="qwen_1_5"
+MAX_MODEL_LEN=11264
 
 BASE_RUN_NAME="llavanext-${VISION_MODEL_VERSION_CLEAN}-${LLM_VERSION_CLEAN}-mlp2x_gelu-mid_stage"
 echo "BASE_RUN_NAME: ${BASE_RUN_NAME}"
-MID_RUN_NAME="llavanext-${VISION_MODEL_VERSION_CLEAN}-${LLM_VERSION_CLEAN}-mlp2x_gelu-mid_stage"
+MID_RUN_NAME="llavanext-${VISION_MODEL_VERSION_CLEAN}-${LLM_VERSION_CLEAN}-mlp2x_gelu-mid_stage_${MAX_MODEL_LEN}"
 echo "MID_RUN_NAME: ${MID_RUN_NAME}"
 
 CKPT_PATH=$LLM_VERSION # this could also be the previous stage checkpoint
@@ -60,7 +61,7 @@ ACCELERATE_CPU_AFFINITY=1 torchrun --nproc_per_node="${NUM_GPUS}" \
     --lr_scheduler_type "cosine" \
     --logging_steps 1 \
     --tf32 True \
-    --model_max_length 32768 \
+    --model_max_length ${MAX_MODEL_LEN} \
     --gradient_checkpointing True \
     --dataloader_num_workers 16 \
     --lazy_preprocess True \
