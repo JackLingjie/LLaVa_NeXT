@@ -49,7 +49,7 @@ deepspeed --num_gpus 8 --num_nodes 2 --hostfile scripts/train/config/hostfile2 \
     --num_train_epochs 1 \
     --per_device_train_batch_size 1 \
     --per_device_eval_batch_size 1 \
-    --gradient_accumulation_steps 32 \
+    --gradient_accumulation_steps 2 \
     --evaluation_strategy "no" \
     --save_strategy "steps" \
     --save_steps 3000 \
