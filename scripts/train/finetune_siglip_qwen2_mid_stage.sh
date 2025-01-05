@@ -45,8 +45,8 @@ ACCELERATE_CPU_AFFINITY=1 torchrun --nproc_per_node="${NUM_GPUS}" \
     --run_name $MID_RUN_NAME \
     --output_dir "/mnt/lingjiejiang/multimodal_code/checkpoints/vlms/${MID_RUN_NAME}" \
     --num_train_epochs 1 \
-    --per_device_train_batch_size 1 \
-    --per_device_eval_batch_size 1 \
+    --per_device_train_batch_size 4 \
+    --per_device_eval_batch_size 4 \
     --gradient_accumulation_steps 4 \
     --evaluation_strategy "no" \
     --save_strategy "steps" \
@@ -58,7 +58,7 @@ ACCELERATE_CPU_AFFINITY=1 torchrun --nproc_per_node="${NUM_GPUS}" \
     --lr_scheduler_type "cosine" \
     --logging_steps 1 \
     --tf32 True \
-    --model_max_length 32768 \
+    --model_max_length 11264 \
     --gradient_checkpointing True \
     --dataloader_num_workers 16 \
     --lazy_preprocess True \
