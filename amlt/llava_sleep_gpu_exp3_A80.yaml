@@ -80,7 +80,7 @@ search:
     - echo $${rank}
     - export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
     - ls /mnt/lingjiejiang
-    - pip install -U flash-attn==2.5.7 --no-build-isolation
+    - pip install -U flash-attn==2.5.8 --no-build-isolation
     - pip install deepspeed==0.12.2
     - pip install accelerate==0.29.3
     - pip install tensorboard
