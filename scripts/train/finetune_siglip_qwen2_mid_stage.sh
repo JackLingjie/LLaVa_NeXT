@@ -45,7 +45,7 @@ ACCELERATE_CPU_AFFINITY=1 torchrun --nproc_per_node="${NUM_GPUS}" \
     --run_name $MID_RUN_NAME \
     --output_dir "/mnt/lingjiejiang/multimodal_code/checkpoints/vlms/${MID_RUN_NAME}" \
     --num_train_epochs 1 \
-    --per_device_train_batch_size 8 \
+    --per_device_train_batch_size 4 \
     --per_device_eval_batch_size 4 \
     --gradient_accumulation_steps 4 \
     --evaluation_strategy "no" \
