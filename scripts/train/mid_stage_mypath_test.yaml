@@ -1,15 +1,15 @@
 datasets:
   - json_path: /mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-ReCap-558K/blip558k_stage1.5_finetune_w_prompt_abspath.json # released in lmms-lab/LLaVA-ReCap-*
-    sampling_strategy: all
+    sampling_strategy: "first:2%"
   - json_path: /mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-ReCap-118K/coco118k_stage1.5_finetune_w_prompt_abspath.json # released in lmms-lab/LLaVA-ReCap-*
-    sampling_strategy: all
+    sampling_strategy: "first:2%"
   - json_path: /mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-ReCap-CC3M/cc3m_recap_data_prompt_v2_abspath.json # released in lmms-lab/LLaVA-ReCap-*
-    sampling_strategy: all
+    sampling_strategy: "first:2%"
   - json_path: /mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr/ureader_tr_processed_abspath.json # released in lmms-lab/LLaVA-OneVision-Mid-Data
-    sampling_strategy: all
+    sampling_strategy: "first:2%"
   - json_path: /mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/evol_instruct/evol_instruct_processed.json # released in lmms-lab/LLaVA-OneVision-Mid-Data
-    sampling_strategy: all
+    sampling_strategy: "first:2%"
   - json_path: /mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_zh/synthdog_zh_processed_abs.json # released in lmms-lab/LLaVA-OneVision-Mid-Data
-    sampling_strategy: all
+    sampling_strategy: "first:2%"
   - json_path: /mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog_en_processed_abspath.json # released in lmms-lab/LLaVA-OneVision-Mid-Data
-    sampling_strategy: all
+    sampling_strategy: "first:2%"
