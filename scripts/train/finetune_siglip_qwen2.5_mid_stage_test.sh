@@ -14,11 +14,11 @@ VISION_MODEL_VERSION_CLEAN="siglip-so400m-patch14-384"
 
 PROMPT_VERSION="qwen_2_5"
 
-MAX_MODEL_LEN=11264
+MAX_MODEL_LEN=2048
 
 BASE_RUN_NAME="llavanext-${VISION_MODEL_VERSION_CLEAN}-${LLM_VERSION_CLEAN}-mlp2x_gelu-mid_stage"
 echo "BASE_RUN_NAME: ${BASE_RUN_NAME}"
-MID_RUN_NAME="llavanext-${VISION_MODEL_VERSION_CLEAN}-${LLM_VERSION_CLEAN}-mlp2x_gelu-mid_stage_${MAX_MODEL_LEN}"
+MID_RUN_NAME="llavanext-${VISION_MODEL_VERSION_CLEAN}-${LLM_VERSION_CLEAN}-mlp2x_gelu-mid_stage_${MAX_MODEL_LEN}_test"
 echo "MID_RUN_NAME: ${MID_RUN_NAME}"
 
 CKPT_PATH=$LLM_VERSION # this could also be the previous stage checkpoint
@@ -29,7 +29,7 @@ ACCELERATE_CPU_AFFINITY=1 torchrun --nproc_per_node="${NUM_GPUS}" \
     --deepspeed scripts/zero3.json \
     --model_name_or_path ${CKPT_PATH} \
     --version ${PROMPT_VERSION} \
-    --data_path scripts/train/mid_stage_mypath_test.yaml \
+    --data_path scripts/train/mid_stage_mypath.yaml \
     --image_folder /mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-ReCap-558K \
     --pretrain_mm_mlp_adapter="/mnt/lingjiejiang/multimodal_code/checkpoints/projectors/llavanext-siglip-so400m-patch14-384-Qwen2.5-7B-Instruct-mlp2x_gelu-pretrain_blip558k_plain/mm_projector.bin" \
     --mm_tunable_parts="mm_vision_tower,mm_mlp_adapter,mm_language_model" \
@@ -47,9 +47,9 @@ ACCELERATE_CPU_AFFINITY=1 torchrun --nproc_per_node="${NUM_GPUS}" \
     --run_name $MID_RUN_NAME \
     --output_dir "/mnt/lingjiejiang/multimodal_code/checkpoints/vlms/${MID_RUN_NAME}" \
     --num_train_epochs 1 \
-    --per_device_train_batch_size 1 \
-    --per_device_eval_batch_size 1 \
-    --gradient_accumulation_steps 32 \
+    --per_device_train_batch_size 4 \
+    --per_device_eval_batch_size 2 \
+    --gradient_accumulation_steps 8 \
     --evaluation_strategy "no" \
     --save_strategy "steps" \
     --save_steps 3000 \
@@ -69,4 +69,5 @@ ACCELERATE_CPU_AFFINITY=1 torchrun --nproc_per_node="${NUM_GPUS}" \
     --torch_compile_backend "inductor" \
     --dataloader_drop_last True \
     # --attn_implementation sdpa
+
 # You can delete the sdpa attn_implementation if you want to use flash attn
