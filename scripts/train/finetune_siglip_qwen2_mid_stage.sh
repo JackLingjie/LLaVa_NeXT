@@ -28,6 +28,7 @@ ACCELERATE_CPU_AFFINITY=1 torchrun --nproc_per_node="${NUM_GPUS}" \
     --model_name_or_path ${CKPT_PATH} \
     --version ${PROMPT_VERSION} \
     --data_path scripts/train/mid_stage_mypath.yaml \
+    --image_folder /mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-ReCap-558K \
     --pretrain_mm_mlp_adapter="/mnt/lingjiejiang/multimodal_code/checkpoints/projectors/llavanext-siglip-so400m-patch14-384-Qwen2-7B-Instruct-mlp2x_gelu-pretrain_blip558k_plain/mm_projector.bin" \
     --mm_tunable_parts="mm_vision_tower,mm_mlp_adapter,mm_language_model" \
     --mm_vision_tower_lr=2e-6 \
