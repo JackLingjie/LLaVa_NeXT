@@ -23,17 +23,5 @@ for ((RANK=1; RANK<NNODES; RANK++)); do
 EOF
 done
 
-# 等待所有其他节点启动
-wait
 
-# Rank 0 最后运行
-echo "Starting training on local machine with rank 0"
-cd /tmp/LLaVa_NeXT
-bash scripts/train/distribute_train/finetune_siglip_qwen2_mid_stage_multinode_base.sh \
-    --nproc_per_node "${NUM_GPUS}" \
-    --nnodes "${NNODES}" \
-    --node_rank 0 \
-    --master_addr "${ADDR}" \
-    --master_port "${PORT}"
 
-echo "All training tasks have been started!"
