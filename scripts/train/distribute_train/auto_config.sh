@@ -18,7 +18,12 @@ for ((RANK=0; RANK<NNODES; RANK++)); do
     fi  
   
     cd LLaVa_NeXT  
-    git checkout -b dev origin/dev  
+    
+    # 检查当前分支并切换到 dev 分支  
+    current_branch=$(git rev-parse --abbrev-ref HEAD)  
+    if [ "$current_branch" != "dev" ]; then  
+        git checkout dev || git checkout -b dev origin/dev  
+    fi  
   
     # 安装依赖  
     pip install -e ".[train]"  
