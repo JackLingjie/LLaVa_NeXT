@@ -16,13 +16,13 @@ PROMPT_VERSION="qwen_1_5"
 MAX_MODEL_LEN=11264  
 BASE_RUN_NAME="llavanext-${VISION_MODEL_VERSION_CLEAN}-${LLM_VERSION_CLEAN}-mlp2x_gelu-mid_stage"  
 echo "BASE_RUN_NAME: ${BASE_RUN_NAME}"  
-MID_RUN_NAME="llavanext-${VISION_MODEL_VERSION_CLEAN}-${LLM_VERSION_CLEAN}-mlp2x_gelu-mid_stage_${MAX_MODEL_LEN}_mutilnode2"  
+MID_RUN_NAME="llavanext-${VISION_MODEL_VERSION_CLEAN}-${LLM_VERSION_CLEAN}-mlp2x_gelu-mid_stage_${MAX_MODEL_LEN}_mutilnode_16"  
 echo "MID_RUN_NAME: ${MID_RUN_NAME}"  
   
 CKPT_PATH=$LLM_VERSION  
 NUM_GPUS=8
 
-ACCELERATE_CPU_AFFINITY=1 torchrun --nproc_per_node=8 --nnodes=3 --node_rank=0 --master_addr="node-0" --master_port=12345 \
+ACCELERATE_CPU_AFFINITY=1 torchrun --nproc_per_node=8 --nnodes=16 --node_rank=0 --master_addr="node-0" --master_port=12345 \
     llava/train/train_mem.py \
     --deepspeed scripts/zero3.json \
     --model_name_or_path ${CKPT_PATH} \
