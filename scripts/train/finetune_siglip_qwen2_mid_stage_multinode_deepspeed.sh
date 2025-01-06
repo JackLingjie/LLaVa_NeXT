@@ -1,73 +1,31 @@
-#!/bin/bash  
-  
-# 默认参数值  
-NUM_GPUS=8  
-NNODES=1  
-RANK=0  
-ADDR="ip"  
-PORT=12345  
-  
-# 解析传入参数  
-while [[ $# -gt 0 ]]; do  
-  case $1 in  
-    --nproc_per_node)  
-      NUM_GPUS="$2"  
-      shift 2  
-      ;;  
-    --nnodes)  
-      NNODES="$2"  
-      shift 2  
-      ;;  
-    --node_rank)  
-      RANK="$2"  
-      shift 2  
-      ;;  
-    --master_addr)  
-      ADDR="$2"  
-      shift 2  
-      ;;  
-    --master_port)  
-      PORT="$2"  
-      shift 2  
-      ;;  
-    *)  
-      echo "Unknown parameter: $1"  
-      shift  
-      ;;  
-  esac  
-done  
-  
-# 这里继续你想要执行的命令或脚本，确保这些变量被使用  
-echo "NUM_GPUS: $NUM_GPUS"  
-echo "NNODES: $NNODES"  
-echo "RANK: $RANK"  
-echo "ADDR: $ADDR"  
-echo "PORT: $PORT" 
-
-# 环境变量配置  
-export OMP_NUM_THREADS=16  
-export NCCL_IB_DISABLE=0  
-export NCCL_IB_GID_INDEX=3  
-export NCCL_SOCKET_IFNAME=eth0  
+export OMP_NUM_THREADS=8
+export NCCL_IB_DISABLE=0
+export NCCL_IB_GID_INDEX=3
+export NCCL_SOCKET_IFNAME=eth0
+export NCCL_DEBUG=INFO
 export NCCL_NET=IB
-export NCCL_DEBUG=INFO  
-  
-LLM_VERSION="/mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/Qwen2-7B-Instruct"  
-LLM_VERSION_CLEAN="Qwen2-7B-Instruct"  
-VISION_MODEL_VERSION="/mnt/lingjiejiang/multimodal_code/checkpoints/clips/siglip-so400m-patch14-384"  
-VISION_MODEL_VERSION_CLEAN="siglip-so400m-patch14-384"  
-  
-PROMPT_VERSION="qwen_1_5"  
-MAX_MODEL_LEN=11264  
-BASE_RUN_NAME="llavanext-${VISION_MODEL_VERSION_CLEAN}-${LLM_VERSION_CLEAN}-mlp2x_gelu-mid_stage"  
-echo "BASE_RUN_NAME: ${BASE_RUN_NAME}"  
-MID_RUN_NAME="llavanext-${VISION_MODEL_VERSION_CLEAN}-${LLM_VERSION_CLEAN}-mlp2x_gelu-mid_stage_${MAX_MODEL_LEN}_mutilnode_16_pdsh"  
-echo "MID_RUN_NAME: ${MID_RUN_NAME}"  
-  
-CKPT_PATH=$LLM_VERSION  
-  
 
-ACCELERATE_CPU_AFFINITY=1 torchrun --nproc_per_node="${NUM_GPUS}" --nnodes="${NNODES}" --node_rank="${RANK}" --master_addr="${ADDR}" --master_port="${PORT}" \
+LLM_VERSION="/mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/Qwen2-7B-Instruct"
+LLM_VERSION_CLEAN="Qwen2-7B-Instruct"
+VISION_MODEL_VERSION="/mnt/lingjiejiang/multimodal_code/checkpoints/clips/siglip-so400m-patch14-384"
+# VISION_MODEL_VERSION_CLEAN="${VISION_MODEL_VERSION//\//_}"
+VISION_MODEL_VERSION_CLEAN="siglip-so400m-patch14-384"
+
+############### Pretrain ################
+
+PROMPT_VERSION="qwen_1_5"
+
+MAX_MODEL_LEN=11264
+
+BASE_RUN_NAME="llavanext-${VISION_MODEL_VERSION_CLEAN}-${LLM_VERSION_CLEAN}-mlp2x_gelu-mid_stage"
+echo "BASE_RUN_NAME: ${BASE_RUN_NAME}"
+MID_RUN_NAME="llavanext-${VISION_MODEL_VERSION_CLEAN}-${LLM_VERSION_CLEAN}-mlp2x_gelu-mid_stage_${MAX_MODEL_LEN}_multinode_deepspeed"
+echo "MID_RUN_NAME: ${MID_RUN_NAME}"
+
+CKPT_PATH=$LLM_VERSION # this could also be the previous stage checkpoint
+NUM_GPUS=8
+
+deepspeed --num_gpus 8 --num_nodes 16 --hostfile scripts/train/config/hostfile16 \
     llava/train/train_mem.py \
     --deepspeed scripts/zero3.json \
     --model_name_or_path ${CKPT_PATH} \
@@ -111,3 +69,4 @@ ACCELERATE_CPU_AFFINITY=1 torchrun --nproc_per_node="${NUM_GPUS}" --nnodes="${NN
     --torch_compile True \
     --torch_compile_backend "inductor" \
     --dataloader_drop_last True \
+
