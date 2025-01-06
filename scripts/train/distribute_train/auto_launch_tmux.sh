@@ -28,16 +28,17 @@ for ((RANK=0; RANK<NNODES; RANK++)); do
 
     # 创建新的 tmux 会话
     tmux new-session -d -s $SESSION_NAME "
-        ssh $NODE bash -c 'cd /tmp/LLaVa_NeXT && \
-        pwd && \
-        ls && \
-        bash scripts/train/distribute_train/finetune_siglip_qwen2_mid_stage_multinode_base.sh \
-            --nproc_per_node ${NUM_GPUS} \
-            --nnodes ${NNODES} \
-            --node_rank ${RANK} \
-            --master_addr ${ADDR} \
-            --master_port ${PORT}'
-        bash
+        ssh $NODE bash -c '
+            cd /tmp/LLaVa_NeXT &&
+            pwd &&
+            ls &&
+            bash scripts/train/distribute_train/finetune_siglip_qwen2_mid_stage_multinode_base.sh \
+                --nproc_per_node ${NUM_GPUS} \
+                --nnodes ${NNODES} \
+                --node_rank ${RANK} \
+                --master_addr ${ADDR} \
+                --master_port ${PORT}
+        '
     "
 
     # 确认会话创建成功
