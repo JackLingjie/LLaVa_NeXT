@@ -4,7 +4,7 @@
 NNODES=16  
   
 # 遍历每个节点并通过SSH执行初始化操作  
-for ((RANK=0; RANK<NNODES; RANK++)); do  
+for ((RANK=3; RANK<NNODES; RANK++)); do  
     NODE="node-$RANK"  
     echo "Setting up environment on $NODE"  
       
