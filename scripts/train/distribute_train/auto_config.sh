@@ -1,7 +1,7 @@
 #!/bin/bash  
   
 # 配置节点数量  
-NNODES=2  
+NNODES=3  
   
 # 遍历每个节点并通过SSH执行初始化操作  
 for ((RANK=0; RANK<NNODES; RANK++)); do  
@@ -18,7 +18,7 @@ for ((RANK=0; RANK<NNODES; RANK++)); do
     fi  
   
     cd LLaVa_NeXT  
-    
+
     # 检查当前分支并切换到 dev 分支  
     current_branch=$(git rev-parse --abbrev-ref HEAD)  
     if [ "$current_branch" != "dev" ]; then  
