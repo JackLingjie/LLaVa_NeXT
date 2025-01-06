@@ -8,7 +8,7 @@ for ((RANK=0; RANK<NNODES; RANK++)); do
     NODE="node-$RANK"  
     echo "Setting up environment on $NODE"  
       
-    ssh $NODE bash << 'EOF'  
+    ssh $NODE bash << 'EOF'
     set -e  # 如果有任何命令失败，退出脚本  
   
     # 切换到临时目录并克隆项目  
@@ -23,6 +23,6 @@ for ((RANK=0; RANK<NNODES; RANK++)); do
     # 安装依赖  
     pip install -e ".[train]"  
     pip install -U flash-attn==2.5.8 --no-build-isolation  
-EOF  
+EOF
   
 done  
