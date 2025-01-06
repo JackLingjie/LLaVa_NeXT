@@ -2,7 +2,7 @@
 
 # 配置参数  
 NUM_GPUS=8  
-NNODES=2  
+NNODES=3  
 ADDR="node-0"  
 PORT=12345  
 
