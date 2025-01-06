@@ -49,6 +49,7 @@ export OMP_NUM_THREADS=16
 export NCCL_IB_DISABLE=0  
 export NCCL_IB_GID_INDEX=3  
 export NCCL_SOCKET_IFNAME=eth0  
+export NCCL_NET=IB
 export NCCL_DEBUG=INFO  
   
 LLM_VERSION="/mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/Qwen2-7B-Instruct"  
@@ -65,6 +66,13 @@ echo "MID_RUN_NAME: ${MID_RUN_NAME}"
   
 CKPT_PATH=$LLM_VERSION  
   
+# 在 torchrun 的启动命令中添加条件控制
+if [ "${RANK}" -eq 0 ]; then
+    export TQDM_DISABLE=0
+else
+    export TQDM_DISABLE=1
+fi
+
 ACCELERATE_CPU_AFFINITY=1 torchrun --nproc_per_node="${NUM_GPUS}" --nnodes="${NNODES}" --node_rank="${RANK}" --master_addr="${ADDR}" --master_port="${PORT}" \
     llava/train/train_mem.py \
     --deepspeed scripts/zero3.json \
