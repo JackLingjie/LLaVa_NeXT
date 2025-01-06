@@ -16,6 +16,7 @@ fi
 # 使用 pdsh 分布式启动训练
 for ((RANK=0; RANK<NNODES; RANK++)); do
     NODE="node-$RANK"
+    echo "Starting training on $NODE with rank $RANK"
     tmux new-session -d -s train_$RANK "ssh $NODE bash -c 'cd /tmp/LLaVa_NeXT && bash scripts/train/distribute_train/finetune_siglip_qwen2_mid_stage_multinode_base.sh --nproc_per_node ${NUM_GPUS} --nnodes ${NNODES} --node_rank ${RANK} --master_addr ${ADDR} --master_port ${PORT}'"
 done
 
