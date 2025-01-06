@@ -27,7 +27,7 @@ for ((RANK=0; RANK<NNODES; RANK++)); do
   
     # 安装依赖  
     pip install -e ".[train]"  
-    pip install -U flash-attn==2.5.7 --no-build-isolation  
+    pip install flash-attn==2.5.7 --no-build-isolation --no-cache-dir  
 EOF
 
 done  
