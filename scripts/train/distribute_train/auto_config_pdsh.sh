@@ -16,26 +16,28 @@ if ! grep -q "node-" "$NODES_FILE"; then
 fi
 
 # 使用 pdsh 在所有节点上执行初始化操作
-pdsh -R ssh -w ^$NODES_FILE << 'EOF'
+pdsh -R ssh -w ^$NODES_FILE bash -c "'
 set -e  # 如果有任何命令失败，退出脚本
 
-# 切换到临时目录并克隆项目
-cd /tmp
-if [ ! -d "LLaVa_NeXT" ]; then
+# 切换到临时目录
+cd /tmp || { echo \"Failed to switch to /tmp directory\"; exit 1; }
+
+# 克隆项目
+if [ ! -d \"LLaVa_NeXT\" ]; then
     git clone https://github.com/JackLingjie/LLaVa_NeXT.git
 fi
 
-cd LLaVa_NeXT
+cd LLaVa_NeXT || { echo \"Failed to switch to LLaVa_NeXT directory\"; exit 1; }
 
 # 检查并切换到 dev 分支
-current_branch=$(git rev-parse --abbrev-ref HEAD)
-if [ "$current_branch" != "dev" ]; then
+current_branch=\$(git rev-parse --abbrev-ref HEAD)
+if [ \"\$current_branch\" != \"dev\" ]; then
     git checkout dev || git checkout -b dev origin/dev
 fi
 
 # 安装依赖
-pip install -e ".[train]"
+pip install -e \"[train]\"
 pip install -U flash-attn==2.5.7 --no-build-isolation
-EOF
+'"
 
 echo "Environment setup completed on all nodes!"
