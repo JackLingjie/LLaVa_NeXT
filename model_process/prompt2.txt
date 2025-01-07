@@ -1,0 +1,63 @@
+我用下面这个代码把lm_head部分也替换了，然后直接保存了
+import torch
+from transformers import (
+    Qwen2VLForConditionalGeneration,  # Qwen2-VL
+    Qwen2ForCausalLM,                 # Qwen2 / Qwen2.5 coder
+)
+
+# 1) 加载 Qwen2-VL 模型
+qwen2vl_model_path = "/mnt/lingjiejiang/textual_aesthetics/model_checkpoint/vlm_checkpoints/Qwen2-VL-7B-Instruct"
+qwen2vl = Qwen2VLForConditionalGeneration.from_pretrained(
+    qwen2vl_model_path,
+    torch_dtype="auto",  
+    device_map="auto"
+)
+
+# 2) 加载 Qwen2.5 coder 模型 (或者 Qwen2-7B-Instruct 等)
+qwen2coder_model_path = "/mnt/lingjiejiang/multimodal_code/checkpoints/llms/Qwen2.5-7B-Instruct"
+qwen2coder = Qwen2ForCausalLM.from_pretrained(
+    qwen2coder_model_path,
+    torch_dtype="auto",
+    device_map="auto"
+)
+
+# 取出 Qwen2VL 里 “LLM 部分”的 state_dict
+qwen2vl_backbone_sd = qwen2vl.model.state_dict()
+
+# 取出 Qwen2Coder (Qwen2.5) 里 “LLM 部分”的 state_dict
+qwen2coder_sd = qwen2coder.model.state_dict()
+
+# 遍历 coder 的每个参数，如果在 vl 里有同名参数且形状一致，就直接覆盖
+for name, param in qwen2coder_sd.items():
+    if name in qwen2vl_backbone_sd and qwen2vl_backbone_sd[name].shape == param.shape:
+        # 用 coder 的参数覆盖 VL 的对应参数
+        with torch.no_grad():
+            qwen2vl_backbone_sd[name].copy_(param)
+
+# 将更新后的 state_dict load 回去
+qwen2vl.model.load_state_dict(qwen2vl_backbone_sd)
+
+qwen2vl_lm_head_sd = qwen2vl.lm_head.state_dict()
+qwen2coder_lm_head_sd = qwen2coder.lm_head.state_dict()
+for name, param in qwen2coder_lm_head_sd.items():
+    if name in qwen2vl_lm_head_sd and qwen2vl_lm_head_sd[name].shape == param.shape:
+        with torch.no_grad():
+            qwen2vl_lm_head_sd[name].copy_(param)
+qwen2vl.lm_head.load_state_dict(qwen2vl_lm_head_sd)
+
+qwen2vl.save_pretrained("/mnt/lingjiejiang/multimodal_code/checkpoints/vlms/Qwenvl2-coder2.5-7B-Instruct_merge")
+
+但是我在保存的文件夹中发现没有保存词表和chat_template等文件
+ls Qwenvl2-coder2.5-7B-Instruct_merge/
+config.json             model-00001-of-00004.safetensors  model-00003-of-00004.safetensors  model.safetensors.index.json
+generation_config.json  model-00002-of-00004.safetensors  model-00004-of-00004.safetensors
+
+ls /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/vlm_checkpoints/Qwen2-VL-7B-Instruct
+LICENSE             config.json             model-00001-of-00005.safetensors  model-00004-of-00005.safetensors  preprocessor_config.json  vocab.json
+README.md           generation_config.json  model-00002-of-00005.safetensors  model-00005-of-00005.safetensors  tokenizer.json
+chat_template.json  merges.txt              model-00003-of-00005.safetensors  model.safetensors.index.json      tokenizer_config.json
+
+ls /mnt/lingjiejiang/multimodal_code/checkpoints/llms/Qwen2.5-7B-Instruct
+LICENSE      generation_config.json            model-00002-of-00004.safetensors  model.safetensors.index.json  vocab.json
+README.md    merges.txt                        model-00003-of-00004.safetensors  tokenizer.json
+config.json  model-00001-of-00004.safetensors  model-00004-of-00004.safetensors  tokenizer_config.json
