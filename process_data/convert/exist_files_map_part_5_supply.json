@@ -1,0 +1,6 @@
+{
+  "cambrian(filtered_gpt4vo)": "cambrian_filtered_gpt4vo_sp_token_fltd_max10k.json",
+  "sharegpt4o": "sharegpt4o_dataset.jsonl",
+  "ai2d(cauldron,llava_format)": "ai2d_llava_format_2434.json",
+  "aokvqa(cauldron,llava_format)": "aokvqa_16539_llava_format.json"
+}

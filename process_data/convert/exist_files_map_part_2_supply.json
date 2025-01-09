@@ -1,0 +1,9 @@
+{
+  "infographic(gpt4v)": "infographic_azuregpt4v_1992.json",
+  "lrv_chart": "lrv_chart_1787.json",
+  "lrv_normal(filtered)": "lrv_normal_gpt4v_filtered_10500.json",
+  "scienceqa(nona_context)": "scienceqa_nona_context_19218.json",
+  "allava_instruct_vflan4v": "allava_instruct_vflan4v_20000.json",
+  "allava_instruct_laion4v": "allava_instruct_laion4v_50000.json",
+  "textocr(gpt4v)": "textocr_gpt4v_train_converted_25114.json"
+}

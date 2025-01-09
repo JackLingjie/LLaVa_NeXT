@@ -1,0 +1,9 @@
+{
+  "sharegpt4v(coco)": "sharegpt4v-coco-50k.json",
+  "sharegpt4v(knowledge)": "sharegpt4v-knowledge-2k.json",
+  "sharegpt4v(llava)": "sharegpt4v-llava-30k.json",
+  "sharegpt4v(sam)": "sharegpt4v-sam-20k.json",
+  "CLEVR-Math(MathV360K)": "MathV360K_CLEVR-Math_5290.json",
+  "FigureQA(MathV360K)": "MathV360K_FigureQA_17597.json",
+  "Geometry3K(MathV360K)": "MathV360K_Geometry3K_9734.json"
+}

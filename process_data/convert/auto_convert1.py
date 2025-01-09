@@ -84,7 +84,7 @@ def process_dataset(dirname, filename):
 # machine_id = int(input("Enter Machine ID (1-5): "))  
 machine_id = 1
 # 根据机器 ID 读取对应的 JSON 文件  
-file_path = f'process_data/convert/exist_files_map_part_{machine_id}.json'  
+file_path = f'process_data/convert/exist_files_map_part_{machine_id}_supply.json'  
 with open(file_path, 'r') as file:  
     dirname2filename = json.load(file)  
   
