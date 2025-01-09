@@ -4,3 +4,6 @@ No image
 "magpie_pro(qwen2_72b_st)": "magpie_pro_qwen2_72b_st_300000_sp_token_fltd_299992.json",
 "magpie_pro(l3_80b_st)": "magpie_pro_l3_80b_st_300000.json",
 "magpie_pro(l3_80b_mt)": "magpie_pro_l3_80b_mt_300000_sp_token_fltd_299998.json",
+
+not found
+  "cambrian(filtered_gpt4vo)": "cambrian_filtered_gpt4vo_sp_token_fltd_max10k.json",
