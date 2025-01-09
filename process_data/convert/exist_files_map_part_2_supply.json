@@ -1,5 +1,5 @@
 {
-  "infographic(gpt4v)": "infographic_azuregpt4v_1992.json",
+
   "lrv_chart": "lrv_chart_1787.json",
   "lrv_normal(filtered)": "lrv_normal_gpt4v_filtered_10500.json",
   "scienceqa(nona_context)": "scienceqa_nona_context_19218.json",
