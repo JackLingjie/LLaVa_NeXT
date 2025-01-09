@@ -25,32 +25,31 @@ def process_dataset(dirname, filename):
   
     def process_entry(entry):  
         try:  
-            # Check if 'id' key exists, if not, generate a unique id  
-            if 'id' not in entry:  
-                img_id = str(uuid.uuid4())  # Generate a unique id  
-            else:  
-                img_id = entry['id']  
+            # 检查特定字段是否为 NoneType 或者 id 是否不存在，如果是则跳过  
+            if entry.get('image') is None or 'id' not in entry:  
+                return None  # 跳过这个条目  
+    
+            img_id = entry['id']  
     
             image = entry['image']  
-    
-            # Convert image to RGB if it is in RGBA or P mode  
+            # 如果图像是 RGBA 或 P 模式，则转换为 RGB  
             if image.mode in ['RGBA', 'P']:  
                 image = image.convert('RGB')  
     
-            # Determine the image filename and path  
+            # 确定图像文件名和路径  
             image_filename = f"{img_id}.jpg"  
             image_path = os.path.join(output_image_path, image_filename)  
     
-            # Ensure the directory exists  
+            # 确保目录存在  
             os.makedirs(os.path.dirname(image_path), exist_ok=True)  
     
-            # Save the image to the specified location  
+            # 将图像保存到指定位置  
             image.save(image_path)  
     
-            # Modify the conversations to include the new prompt  
+            # 修改会话以包含新的提示  
             conversations = entry['conversations']  
-            
-            # Create the new data entry  
+    
+            # 创建新的数据条目  
             new_entry = {  
                 "id": img_id,  
                 "image_temp": f"{IMAGE_PATH}/{image_filename}",  
@@ -58,9 +57,10 @@ def process_dataset(dirname, filename):
             }  
     
             return new_entry  
+    
         except Exception as e:  
             print(f"Error processing entry: {e}")  
-            return None    
+            return None  
   
     # 使用map和多进程处理数据，添加tqdm显示进度  
     # train_data = train_data.select(range(10))
