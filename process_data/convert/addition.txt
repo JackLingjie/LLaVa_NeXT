@@ -12,3 +12,4 @@ Failed
   "ureader_ie": "ureader_ie_sft.json",
   "infographic(gpt4v)": "infographic_azuregpt4v_1992.json",
     "vision_flan(filtered)": "vision_flan_filtered_186070.json",
+    "mavis_math_rule_geo": "mavis_math_rule_geo_100000.json",
