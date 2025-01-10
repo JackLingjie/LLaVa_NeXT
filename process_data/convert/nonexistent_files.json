@@ -1,7 +1,4 @@
 {
-    "mavis_math_rule_geo": "mavis_math_rule_geo_100000.json",
-    "allava_instruct_vflan4v": "allava_instruct_vflan4v_20000.json",
-    "vision_flan(filtered)": "vision_flan_filtered_186070.json",
     "geo170k(align)": "geo170k_align_converted_60252.json",
     "sharegpt4o": "sharegpt4o_dataset.jsonl"
 }
