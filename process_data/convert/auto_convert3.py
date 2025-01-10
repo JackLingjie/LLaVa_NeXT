@@ -64,7 +64,7 @@ def process_dataset(dirname, filename):
     filtered_data = train_data.filter(is_valid_entry)  
   
     # 使用 map 和多进程处理数据，添加 tqdm 显示进度  
-    processed_data = filtered_data.map(lambda entry: process_entry(entry), num_proc=cpu_count())  
+    processed_data = filtered_data.map(lambda entry: process_entry(entry), num_proc=24)  
   
     # 将处理后的数据转换为字典列表  
     processed_data_list = []  
