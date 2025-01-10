@@ -4,8 +4,7 @@ from multiprocessing import cpu_count
 import os  
 from PIL import Image  
 from tqdm import tqdm  
-import uuid  
-
+  
 def process_dataset(dirname, filename):  
     # 加载数据集  
     path = f"/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Data/{dirname}"  
@@ -23,48 +22,49 @@ def process_dataset(dirname, filename):
     # 确保图像输出目录存在  
     os.makedirs(output_image_path, exist_ok=True)  
   
+    def is_valid_entry(entry):  
+        # 检查条目是否有效（即具有 id 和 image）  
+        return entry.get('image') is not None and 'id' in entry  
+  
     def process_entry(entry):  
         try:  
-            # 检查特定字段是否为 NoneType 或者 id 是否不存在，如果是则跳过  
-            if entry.get('image') is None or 'id' not in entry:  
-                return None  # 跳过这个条目  
-    
             img_id = entry['id']  
-    
             image = entry['image']  
+  
             # 如果图像是 RGBA 或 P 模式，则转换为 RGB  
             if image.mode in ['RGBA', 'P']:  
                 image = image.convert('RGB')  
-    
+  
             # 确定图像文件名和路径  
             image_filename = f"{img_id}.jpg"  
             image_path = os.path.join(output_image_path, image_filename)  
-    
+  
             # 确保目录存在  
             os.makedirs(os.path.dirname(image_path), exist_ok=True)  
-    
+  
             # 将图像保存到指定位置  
             image.save(image_path)  
-    
+  
             # 修改会话以包含新的提示  
             conversations = entry['conversations']  
-    
+  
             # 创建新的数据条目  
             new_entry = {  
                 "id": img_id,  
                 "image_temp": f"{IMAGE_PATH}/{image_filename}",  
                 "conversations": conversations  
             }  
-    
+  
             return new_entry  
-    
         except Exception as e:  
             print(f"Error processing entry: {e}")  
             return None  
   
-    # 使用map和多进程处理数据，添加tqdm显示进度  
-    # train_data = train_data.select(range(10))
-    processed_data = train_data.map(lambda entry: process_entry(entry), num_proc=cpu_count())  
+    # 过滤掉无效的条目  
+    filtered_data = train_data.filter(is_valid_entry)  
+  
+    # 使用 map 和多进程处理数据，添加 tqdm 显示进度  
+    processed_data = filtered_data.map(lambda entry: process_entry(entry), num_proc=cpu_count())  
   
     # 将处理后的数据转换为字典列表  
     processed_data_list = []  
@@ -74,15 +74,14 @@ def process_dataset(dirname, filename):
             entry['image'] = entry.pop('image_temp')  
             processed_data_list.append(entry)  
   
-    # 将处理后的数据保存到JSON文件  
+    # 将处理后的数据保存到 JSON 文件  
     with open(output_json_file, 'w', encoding='utf-8') as f:  
         json.dump(processed_data_list, f, ensure_ascii=False, indent=2)  
   
     print(f"Processed data has been saved to {output_json_file}")  
   
 # 获取机器 ID  
-# machine_id = int(input("Enter Machine ID (1-5): "))  
-machine_id = 2
+machine_id = 2  
 # 根据机器 ID 读取对应的 JSON 文件  
 file_path = f'process_data/convert/exist_files_map_part_{machine_id}_supply.json'  
 with open(file_path, 'r') as file:  

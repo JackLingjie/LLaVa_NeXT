@@ -1,4 +1,5 @@
 {
-  "textocr(gpt4v)": "textocr_gpt4v_train_converted_25114.json",
+  "ureader_ie": "ureader_ie_sft.json",
+  "infographic(gpt4v)": "infographic_azuregpt4v_1992.json"
 
 }
