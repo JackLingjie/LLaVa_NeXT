@@ -64,7 +64,7 @@ def process_dataset(dirname, filename):
   
     # 使用多线程处理每个条目  
     processed_data_list = []  
-    with ThreadPoolExecutor() as executor:  
+    with ThreadPoolExecutor(max_workers=36) as executor:  
         futures = {executor.submit(process_entry, entry): entry for entry in train_data}  
         for future in tqdm(as_completed(futures), total=len(train_data), desc="Processing Entries"):  
             processed_entry = future.result()  
