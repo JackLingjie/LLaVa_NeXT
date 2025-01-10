@@ -1,5 +1,4 @@
 {
-
-  "allava_instruct_laion4v": "allava_instruct_laion4v_50000.json",
-  "textocr(gpt4v)": "textocr_gpt4v_train_converted_25114.json"
+  "textocr(gpt4v)": "textocr_gpt4v_train_converted_25114.json",
+  "mathqa": "mathqa_29837.json"
 }
