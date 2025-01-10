@@ -37,7 +37,8 @@ def process_dataset(dirname, filename):
   
             # 跳过已存在的图片  
             if os.path.exists(image_path):  
-                print(f"Image {image_filename} already exists, skipping...")  
+                pass
+                # print(f"Image {image_filename} already exists, skipping...")  
             else:  
                 # 如果图像是 RGBA 或 P 模式，则转换为 RGB  
                 if image.mode in ['RGBA', 'P']:  
