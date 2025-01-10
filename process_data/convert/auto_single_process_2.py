@@ -3,6 +3,7 @@ from datasets import load_dataset
 import os  
 from PIL import Image  
 from tqdm import tqdm  
+from concurrent.futures import ThreadPoolExecutor, as_completed  
   
 def process_dataset(dirname, filename):  
     # 加载数据集  
@@ -59,14 +60,16 @@ def process_dataset(dirname, filename):
             print(f"Error processing entry: {e}")  
             return None  
   
-    # 手动遍历数据并处理每个条目  
+    # 使用多线程处理每个条目  
     processed_data_list = []  
-    for entry in tqdm(train_data, desc="Processing Entries"):  
-        processed_entry = process_entry(entry)  
-        if processed_entry is not None:  
-            # 删除 image_temp 并将其替换为 image  
-            processed_entry['image'] = processed_entry.pop('image_temp')  
-            processed_data_list.append(processed_entry)  
+    with ThreadPoolExecutor() as executor:  
+        futures = {executor.submit(process_entry, entry): entry for entry in train_data}  
+        for future in tqdm(as_completed(futures), total=len(train_data), desc="Processing Entries"):  
+            processed_entry = future.result()  
+            if processed_entry is not None:  
+                # 删除 image_temp 并将其替换为 image  
+                processed_entry['image'] = processed_entry.pop('image_temp')  
+                processed_data_list.append(processed_entry)  
   
     # 将处理后的数据保存到 JSON 文件  
     with open(output_json_file, 'w', encoding='utf-8') as f:  
