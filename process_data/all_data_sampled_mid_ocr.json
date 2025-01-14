@@ -1,0 +1,1702 @@
+[
+  {
+    "id": "00006834003065",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nthere are words 'Projected share of the population in extreme poverty, 2023 43.54% Nigeria' in the image. Read the text behind.",
+        "role": "user"
+      },
+      {
+        "content": "31.44% Extreme fragility 29.05% Africa 18.46% Fragile 6.35% World 0.76% India 0% 10% 20% 30% 40%",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/00006834003065.png"
+    ]
+  },
+  {
+    "id": "00035547003867",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nThe content presented in this diagram states 'Sex ratio at birth by birth order, China, 2000 159.36 (2000) Third child 151.92 (2000) Second child'. Read the following text.",
+        "role": "user"
+      },
+      {
+        "content": "107.12 (2000) First child 0 20 40 60 80 100 120 140",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/00035547003867.png"
+    ]
+  },
+  {
+    "id": "00035547003876",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nIdentify text in the picture",
+        "role": "user"
+      },
+      {
+        "content": "Sex ratio at birth by birth order, South Korea, 1986 to 2002 240.0 220.0 200.0 180.0 160.0 Fourth child & higher 140.0 Third child 120.0 Second child First child 100.0 1986.0 1988.0 1990.0 1992.0 1994.0 1996.0 1998.0 2000.0 2002.0",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/00035547003876.png"
+    ]
+  },
+  {
+    "id": "00097754005965",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nThe inscription on this picture explains 'Discriminatory attitudes towards people living with HIV, 2016 73% Armenia'. Read the text behind.",
+        "role": "user"
+      },
+      {
+        "content": "53.4% Sierra Leone 30.8% Belize 28% Mozambique 11.9% Kenya 0% 10% 20% 30% 40% 50% 60% 70%",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/00097754005965.png"
+    ]
+  },
+  {
+    "id": "00108924005661",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nThe texts in this image read 'Death rates from substance use disorders, 1990 to 1997 3.0 Ethiopia Spain Marshall Islands 2.5 Micronesia (country)'. Continue reading the text.",
+        "role": "user"
+      },
+      {
+        "content": "2.0 1.5 North Macedonia 1.0 0.5 0.0 1990.0 1991.0 1992.0 1993.0 1994.0 1995.0 1996.0 1997.0",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/00108924005661.png"
+    ]
+  },
+  {
+    "id": "00268016000783",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nlist the texts in the picture.",
+        "role": "user"
+      },
+      {
+        "content": "Private health expenditure per person, 2004 $397.93 Argentina $41.25 Fiji $35.83 Benin $0 $50 $100 $150 $200 $250 $300 $350",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/00268016000783.png"
+    ]
+  },
+  {
+    "id": "00268016000832",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nDecode text from the snapshot.",
+        "role": "user"
+      },
+      {
+        "content": "Private health expenditure per person, 2008 to 2014 200.0 Oman 150.0 100.0 50.0 Samoa 0.0 2008.0 2009.0 2010.0 2011.0 2012.0 2013.0 2014.0",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/00268016000832.png"
+    ]
+  },
+  {
+    "id": "00309421021808",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nThe inscription on this picture explains 'Share of people agreeing with the statement \"most people can be trusted\",1993 47.92% (1998) Finland'. Read the following text.",
+        "role": "user"
+      },
+      {
+        "content": "29.01% Spain 0% 10% 20% 30% 40%",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/00309421021808.png"
+    ]
+  },
+  {
+    "id": "00326327000592",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nThe writing on this visual representation states 'Fertilizer application rates over the long-run, 2002 to 2014 300.0 250.0 Israel 200.0 150.0 Pakistan 100.0 50.0 Algeria Iran 0.0 2002.0 2004.0 2006.0'. Read the text behind.",
+        "role": "user"
+      },
+      {
+        "content": "2008.0 2010.0 2012.0 2014.0",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/00326327000592.png"
+    ]
+  },
+  {
+    "id": "00326327001359",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nRead written language in the visuals",
+        "role": "user"
+      },
+      {
+        "content": "Fertilizer application rates over the long-run, 2002 159.12 kg/ha (2002) Papua New Guinea 33.11 kg/ha (2002) Guyana 0 kg/ha 20 kg/ha 40 kg/ha 60 kg/ha 80 kg/ha 120 kg/ha",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/00326327001359.png"
+    ]
+  },
+  {
+    "id": "00349887008643",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nthere are words 'Share of land area which experienced extreme one-day precipitation, USA,1963 8.86% 9-year average 4% Extreme one-day precipitation' in the image. Read the following text.",
+        "role": "user"
+      },
+      {
+        "content": "0% 2% 4% 6% 8%",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/00349887008643.png"
+    ]
+  },
+  {
+    "id": "00784700010464",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nThe inscription on this picture explains 'Carbon footprint of travel per kilometer, 2018 255 g Domestic flight 192 g Medium car (petrol) 171 g Medium car (diesel) 156 g Short-haul flight (economy) 150 g Long-haul flight (economy) 105 g Bus 103 g Motorcycle (medium)'. What are the following text?",
+        "role": "user"
+      },
+      {
+        "content": "96 g Petrol car, 2 passengers 53 g Medium electric vehicle (UK electricity) 41 g National rail 19 g Ferry (foot passenger) 6 g Eurostar (international rail) 0 g 50 g 100 g 150 g 200 g 250 g",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/00784700010464.png"
+    ]
+  },
+  {
+    "id": "00881004009933",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nThe texts in this image read 'Time required to start a business, 2003 to 2017 60.0 50.0'. Read the text behind.",
+        "role": "user"
+      },
+      {
+        "content": "40.0 30.0 Argentina Bahamas 20.0 Romania 10.0 European Union 0.0 2003.0 2004.0 2006.0 2008.0 2010.0 2012.0 2014.0 2016.0 2017.0",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/00881004009933.png"
+    ]
+  },
+  {
+    "id": "00916448003743",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nRetrieve written information from the image.",
+        "role": "user"
+      },
+      {
+        "content": "Total financial assistance and flows for agriculture, by recipient, 2000 $956.76 million South America $583.66 million Small Island Developing States (SIDS) $30.91 million Guatemala $21.01 million Uruguay $0 $200 million $400 million $600 million $800 million",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/00916448003743.png"
+    ]
+  },
+  {
+    "id": "00989191017734",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nlist the texts in the picture.",
+        "role": "user"
+      },
+      {
+        "content": "Gap in GDP per hour worked with respect to the United States, 1995 to2006 Russia -70.0 -72.0 -74.0 -76.0 -78.0 -80.0 1995.0 1996.0 1998.0 2000.0 2002.0 2004.0 2006.0",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/00989191017734.png"
+    ]
+  },
+  {
+    "id": "01001540004358",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nThe inscription on this picture explains 'Daily meat consumption per person, 1961 to 1988 South America 120.0 100.0 80.0 60.0 Kenya 40.0 Gambia'. Continue reading the text.",
+        "role": "user"
+      },
+      {
+        "content": "20.0 0.0 1961.0 1965.0 1970.0 1975.0 1980.0 1985.0 1988.0",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/01001540004358.png"
+    ]
+  },
+  {
+    "id": "01200566001630",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nDeciphering written content in the photo.",
+        "role": "user"
+      },
+      {
+        "content": "Protein-energy malnutrition death rates by age, Ethiopia, 1990 263.52 Under-5s 219.86 70+ years old 62.21 All ages 56.54 Age-standardized 48.68 50-60 years old 7.41 5-14 years old 5.12 15-49 years old 0 50 100 150 200 250",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/01200566001630.png"
+    ]
+  },
+  {
+    "id": "01503134001790",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nTranslate text in the picture.",
+        "role": "user"
+      },
+      {
+        "content": "Armed forces personnel (% of total labor force), 1999 3.62% Qatar 1.27% Vietnam 0.23% Tanzania 0% 0.5% 1% 1.5% 2% 2.5% 3% 3.5%",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/01503134001790.png"
+    ]
+  },
+  {
+    "id": "01503134001823",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nWords 'Armed forces personnel (% of total labor force), 2002 to 2011 0.7 0.6 0.5 Germany 0.4 0.3 Guinea 0.2 0.1 0.0' are in the picture. Continue reading the text.",
+        "role": "user"
+      },
+      {
+        "content": "2002.0 2004.0 2006.0 2008.0 2010.0 2011.0",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/01503134001823.png"
+    ]
+  },
+  {
+    "id": "01606743005377",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nIdentify text in the picture",
+        "role": "user"
+      },
+      {
+        "content": "Meat supply per person, 1999 89.72 kg Southern Europe 76.3 kg Paraguay 10.5 kg Ghana 0 kg 20 kg 40 kg 60 kg 80 kg",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/01606743005377.png"
+    ]
+  },
+  {
+    "id": "01749121006280",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nThe language used in this photograph says 'Share of population who have ever been homeless, 2003 7.7% United Kingdom 6.2% United States 4% Italy 3.4% Belgium'. What are the following text?",
+        "role": "user"
+      },
+      {
+        "content": "2.4% Germany 0% 1% 2% 3% 4% 5% 6% 7%",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/01749121006280.png"
+    ]
+  },
+  {
+    "id": "02108983001245",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nWords 'Outdoor air pollution death rates by age, Central Latin America, 2010 326.5 70+ year olds 54.3 50-69 year olds 7.5 Under-5s 4 15-49 year olds 0.3 5-14 year olds 0' are in the picture. What are the following text?",
+        "role": "user"
+      },
+      {
+        "content": "50 100 150 200 250 300",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/02108983001245.png"
+    ]
+  },
+  {
+    "id": "02277204000146",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nThe writing on this visual representation states 'Sulphur dioxide (SO\u2082) emissions, 2000 to 2008 China 30.0 25.0 20.0 15.0 10.0 India 5.0'. Continue reading the text.",
+        "role": "user"
+      },
+      {
+        "content": "0.0 2000.0 2001.0 2002.0 2003.0 2004.0 2005.0 2006.0 2007.0 2008.0",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/02277204000146.png"
+    ]
+  },
+  {
+    "id": "02453559002054",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nThe verbiage included in this snapshot describes'Urbanization over the past 500 years, 1950 85.2% (1950) Hong Kong 58.42% (1950) Chile 4.6% (1950) Ethiopia 0% 20% 40%'. Continue reading the text.",
+        "role": "user"
+      },
+      {
+        "content": "60% 80% 100%",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/02453559002054.png"
+    ]
+  },
+  {
+    "id": "02491305001736",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nThe writing on this visual representation states 'Arable land use per person, 1975 0.58 hectares Iceland 0.18 hectares Ghana 0 hectares 0.1 hectares 0.2 hectares 0.3 hectares'. What are the following text?",
+        "role": "user"
+      },
+      {
+        "content": "0.4 hectares 0.5 hectares",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/02491305001736.png"
+    ]
+  },
+  {
+    "id": "03025603003748",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nThe verbiage included in this snapshot describes'Number of whales killed, World, 1958 71,228 All whale species 30,693 Fin whale 20,549 Sperm whale 8,560 Humpback whale 5,276 Minke whale 4,727 Sei whale 1,383 Blue whale 29 Bryde's whale 8 Gray whale 3'. Read the text behind.",
+        "role": "user"
+      },
+      {
+        "content": "Right whale 0 Unspecified/Other species 0 10,000 20,000 30,000 40,000 50,000 60,000 70,000",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/03025603003748.png"
+    ]
+  },
+  {
+    "id": "03417692002778",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nwhat words are in the image?",
+        "role": "user"
+      },
+      {
+        "content": "Annual percentage change in solar energy generation 80.0 60.0 40.0 20.0 Italy 0.0 1990.0 1991.0 1992.0 1993.0 1994.0 1995.0 1996.0",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/03417692002778.png"
+    ]
+  },
+  {
+    "id": "03650941000776",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nThe inscription on this picture explains 'Acute care beds per 1,000 people, 2009 5.5 beds'. Read the following text.",
+        "role": "user"
+      },
+      {
+        "content": "Belgium 3.4 beds Finland 1.6 beds Mexico 0 beds 1 beds 2 beds 3 beds 4 beds 5 beds",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/03650941000776.png"
+    ]
+  },
+  {
+    "id": "03666641001319",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nthere are words 'Share of tropical deforestation 33.12% Brazil 20.85% Americas (excl. Brazil and Mexico) 17.46% Africa 13.94% Indonesia 11.21% Asia and Pacific (excl. Indonesia and India) 2.01% Mexico 1.41%' in the image. What are the following text?",
+        "role": "user"
+      },
+      {
+        "content": "India 0% 5% 10% 15% 20% 25% 30%",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/03666641001319.png"
+    ]
+  },
+  {
+    "id": "03739415004997",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nThe language used in this photograph says 'Food aid received, 2007 $49.21 million Sudan $1.04 million Djibouti $247,673'. Continue reading the text.",
+        "role": "user"
+      },
+      {
+        "content": "Solomon Islands $0 $10 million $20 million $30 million $40 million",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/03739415004997.png"
+    ]
+  },
+  {
+    "id": "04262286005326",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nthere are words 'Technology adoption in US households, 1968 99.8% Refrigerator 99% Electric power 99% Household refrigerator 96% Radio' in the image. What are the following text?",
+        "role": "user"
+      },
+      {
+        "content": "89.1% Vacuum 88.5% Landline 78.5% Automobile 55% Washing machine 25% Home air conditioning 21% Colour TV 0% 20% 40% 60% 80% 100%",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/04262286005326.png"
+    ]
+  },
+  {
+    "id": "04301786022322",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nThe image says 'Recycling rates of paper and cardboard, 1989 to 1998 South Korea Japan Norway 50.0 Australia Belgium 40.0 30.0 20.0 10.0 0.0'. Continue reading the text.",
+        "role": "user"
+      },
+      {
+        "content": "1989.0 1990.0 1992.0 1994.0 1996.0 1998.0",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/04301786022322.png"
+    ]
+  },
+  {
+    "id": "04336466002459",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nThe picture reads 'Total fertility rate, including UN projections through 2100, 2050 2.08 Haiti - Projection 1.78 Lebanon - Projection 1.73'. What are the following text?",
+        "role": "user"
+      },
+      {
+        "content": "Mexico - Projection 0 0.5 1 1.5 2",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/04336466002459.png"
+    ]
+  },
+  {
+    "id": "04482797005172",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nTranslate text in the picture.",
+        "role": "user"
+      },
+      {
+        "content": "Cancer incidence, 1990 to 2010 Iceland Czechia 400.0 Greece 300.0 Brunei 200.0 Mali 100.0 0.0 1990.0 1995.0 2000.0 2005.0 2010.0",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/04482797005172.png"
+    ]
+  },
+  {
+    "id": "04482797005227",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nDecode text from the snapshot.",
+        "role": "user"
+      },
+      {
+        "content": "Cancer incidence, 2011 900.17 Australasia 280.85 Brunei 183.62 Honduras 146.58 Mali 132.95 Liberia 0 200 400 600 800",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/04482797005227.png"
+    ]
+  },
+  {
+    "id": "04533011002348",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nThe verbiage included in this snapshot describes'DALYs from mental health and substance use disorder by age, Angola,1990 to 2010 2000.0 50-69 years old 15-49 years old 70+ years old Age-standardized'. Read the following text.",
+        "role": "user"
+      },
+      {
+        "content": "1500.0 All ages 1000.0 5-14 years old 500.0 Under-5s 0.0 1990.0 1995.0 2000.0 2005.0 2010.0",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/04533011002348.png"
+    ]
+  },
+  {
+    "id": "04533011003180",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nDetect words in the photograph.",
+        "role": "user"
+      },
+      {
+        "content": "DALYs from mental health and substance use disorder by age, NorthMacedonia, 2011 1,653.64 50-69 years old 1,597.88 15-49 years old 1,571.75 70+ years old 1,441.5 All ages 1,301.96 Age-standardized 838.39 5-14 years old 111.85 Under-5s 0 200 400 600 800 1,000 1,200 1,400 1,600",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/04533011003180.png"
+    ]
+  },
+  {
+    "id": "04660154025330",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nThe inscription on this picture explains 'Number of one-year-olds who did not receive the vaccine against hepatitis(HepB3), 2011 25,910 Zimbabwe 22,758 Italy 3,539 Sri Lanka'. What are the following text?",
+        "role": "user"
+      },
+      {
+        "content": "973 Estonia 0 5,000 10,000 15,000 20,000 25,000",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/04660154025330.png"
+    ]
+  },
+  {
+    "id": "04741624000783",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nthere are words 'Infant mortality rate, 1980 11.05%' in the image. Read the following text.",
+        "role": "user"
+      },
+      {
+        "content": "Mongolia 5.16% Tuvalu 1.91% Cyprus 0% 2% 4% 6% 8% 10%",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/04741624000783.png"
+    ]
+  },
+  {
+    "id": "04769019006554",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nIdentify text in the picture",
+        "role": "user"
+      },
+      {
+        "content": "Net official development assistance from OECD-DAC countries, by donor,2000 to 2007 European Union (EU) Institutions 10.0 8.0 6.0 4.0 Denmark 2.0 Switzerland Slovakia Iceland 0.0 2000.0 2001.0 2002.0 2003.0 2004.0 2005.0 2006.0 2007.0",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/04769019006554.png"
+    ]
+  },
+  {
+    "id": "04784450006294",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nRetrieve written information from the image.",
+        "role": "user"
+      },
+      {
+        "content": "Oil consumption per capita, 1982 to 1999 Spain Greece 15.0 10.0 Hungary Slovakia Bulgaria 5.0 0.0 1982.0 1984.0 1986.0 1988.0 1990.0 1992.0 1994.0 1996.0 1999.0",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/04784450006294.png"
+    ]
+  },
+  {
+    "id": "04910323003738",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nWords 'Child mortality by source, Ghana, 1985 15.4% UN IGME (2018) 14.22%' are in the picture. Read the text behind.",
+        "role": "user"
+      },
+      {
+        "content": "UN Population Division (2019) 0% 2% 4% 6% 8% 10% 12% 14%",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/04910323003738.png"
+    ]
+  },
+  {
+    "id": "04930672006502",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nDetect words in the photograph.",
+        "role": "user"
+      },
+      {
+        "content": "Share of suicide deaths from pesticide poisoning, 2014 48.3% Western Pacific 13.7% World 11.3% South-East Asia 8.8% Americas 7.1% Eastern Mediterranean 3.5% Africa 1.7% High-income 0.9% Europe 0% 10% 20% 30% 40%",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/04930672006502.png"
+    ]
+  },
+  {
+    "id": "04960398003730",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nWords 'Chicken meat yield per animal, 1961 0.8 kg Laos 0.75 kg Democratic Republic of Congo 0 kg 0.1 kg' are in the picture. What are the following text?",
+        "role": "user"
+      },
+      {
+        "content": "0.2 kg 0.3 kg 0.4 kg 0.5 kg 0.6 kg 0.7 kg 0.8 kg",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/04960398003730.png"
+    ]
+  },
+  {
+    "id": "05144824002272",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nExtracte words from the graphic.",
+        "role": "user"
+      },
+      {
+        "content": "Population growth rate with and without migration, Land-locked DevelopingCountries (LLDC), 1995 2.5% Population growth rate (without migration) 2.25% Population growth rate (with migration) 0% 0.5% 1% 1.5% 2%",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/05144824002272.png"
+    ]
+  },
+  {
+    "id": "05257096003205",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nIdentify text in the picture",
+        "role": "user"
+      },
+      {
+        "content": "Multidrug-resistant tuberculosis without extensive drug resistance, Moldova,2000 to 2014 Incidence 1200.0 1000.0 800.0 600.0 Prevalence 400.0 200.0 0.0 2000.0 2002.0 2004.0 2006.0 2008.0 2010.0 2012.0 2014.0",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/05257096003205.png"
+    ]
+  },
+  {
+    "id": "05411753006467",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nThe words on this picture are 'Projected mismanaged plastic waste in 2025 228,671 tonnes Dominican Republic 14,045 tonnes'. Read the following text.",
+        "role": "user"
+      },
+      {
+        "content": "Ireland 11,502 tonnes Guadeloupe 0 tonnes 50,000 tonnes 100,000 tonnes 150,000 tonnes 200,000 tonnes",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/05411753006467.png"
+    ]
+  },
+  {
+    "id": "05516045003357",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nIdentify text in the picture",
+        "role": "user"
+      },
+      {
+        "content": "Gender gap in primary education: Share of enrolled female primaryeducation students, 2002 49.03% Madagascar 48.71% Moldova 48.62% Russia 46.5% Solomon Islands 0% 10% 20% 30% 40%",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/05516045003357.png"
+    ]
+  },
+  {
+    "id": "05661573006964",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nRecognize text in the image.",
+        "role": "user"
+      },
+      {
+        "content": "Tax reduction in income inequality (%), 2005 32.66% France 31.15% Luxembourg 21.58% Estonia 0% 5% 10% 15% 20% 25% 30%",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/05661573006964.png"
+    ]
+  },
+  {
+    "id": "05705464003735",
+    "data_source": "ureader_tr",
+    "messages": [
+      {
+        "content": "<image>\nRead written language in the visuals",
+        "role": "user"
+      },
+      {
+        "content": "Government expenditure on pre-primary education as share of GDP, 2000to 2008 0.7 Hungary Denmark 0.6 0.5 0.4 Germany 0.3 United Kingdom 0.2 0.1 South Africa 0.0 2000.0 2001.0 2002.0 2003.0 2004.0 2005.0 2006.0 2007.0 2008.0",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/ureader_tr//ureader-instruction-1.0/ChartQA/train/png/05705464003735.png"
+    ]
+  },
+  {
+    "id": "synthdog_en_000000",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "Dares Wins Vol. 5 Tommy's Heroes Vol . 6: For Tomorrow Vol. 7: Closin g Time miniserie s.Clark Kent is being inter viewed about Su perm an 's connectio n to notorious kille r Tommy Monag han. Taki ng the co nversation o",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000000.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000001",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "nary rule does not apply to evidence foun d due to neglige nce regarding a gover nment database",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000001.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000002",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "ns. Like civilian pr ofessors they seek academi c promotion to the rank of associate professo r and professor. However they are not eligible for tenure. is an aca demic professorial chair i n the history department. In order to preser ve and promot e a bette",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000002.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000003",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "ctification , whic h is the proce ss of mo difying the mode l of th e re sidu al limb by add ing volum e to bon y pro minence and potenti al press ure po ints and remove v",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000003.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000004",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "and are sti ll pop ular t oday . He stu died Jos ef Hoff mann a nd the Wie ner W erkst tte an d for a pe riod of tim e worked under Eli el Saari nen. He also gained i nspi ratio n f rom Geb rder Thonet. During t he la te 1 920s and 1 930s he w orking clos ely with Aino Aal to als o f oc us ing mu ch of his e nerg",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000004.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000005",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "anguage of instru ction in thr ee subjec ts, incl uding l angua ge an d literature, poli tics, and history, in elementary and mid dle schoo ls around the Inner Mon golia reg ion, and t hen thousands of ethnic Mong olia ns",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000005.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000006",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "back to Chaghaniyan. After some time, he left th e region and tried to obtain s upport from other Samanid va ssals. Meanwhile, Nuh h ad Chag haniyan r avaged and it s c api tal sac ked . A",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000006.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000007",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "urmoil of th e Cultural Revolution prolonged de velopment i nto the 198 0s. As a res ult the Type 05 1s deployed in to the Pacific Ocean to suppo rt ballistic missile tests with out a nti-shi p mi ssiles.SpecificationsThe HY-2 is identical to the HY-",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000007.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000008",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "oon without l anding between 1968 a nd 1 972 ar e still alive.The number of deaths wit hin the Ame rican ast rona ut corps",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000008.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000009",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "m cranbe rries are tak en to rec eiving stations where th ey are cleaned sorted and stored pr ior to packaging or processing. Whil e cranber ries are harveste",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000009.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000010",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "year i n the U nite d Stat es and 1983 i n inter natio nal markets.Ra mbler cars were often n icknamed the \" Kenosha Cadill ac\" aft er the original loca tion and the largest place of manufacture in the city of Kenosha, Wisconsin.The first use of the n ame Rambler for an American made automobi le dates to 1897 when Thomas B. Jeffery of Chicago, Illinois and builder of the Rambler bicycle, constructed his first prototype automobile.After receiving positive r eviews at the 1899 Chicago Interna tional Exhibition &amp Tour nament and the first National Automobil",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000010.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000011",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "ured in the US account for a large share of han dguns seized in Japan foll owed by han dguns manufactu red in China and i n the Philippines . In 1990 a Smit h &amp Wes son .38 caliber revolver tha t cost $275 in t he US could sel l for up to $400 0 in Toky o. By 19 97 it w ould s ell for o nly $5 00 due to the proliferation of guns in Japan during the 1990s.The FBI suspects that the Yakuza use various op erations to launder mo ney in the U.S.In 2001 the FBI's representative in Tokyo arranged for Tadamasa Goto the head of the group Goto-gumi to receive a liver transplant a t the UCLA Medica l Center i n the Unit ed States i",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000011.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000012",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "much as 18 months pri or to his move.On 3 July two days prior to A delaides match against sche duled for the next day w as postponed until later in the season.O n 6 July assistant coac h Scott Camporeale was app ointed interim coach for the re mai nder of t he season w",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000012.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000013",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "dobby pedal or electric or other power sources.On a treadle loom, each foot-oper ated treadle is connected by a link age called a tie-up to on e or more shafts. More than one treadle c an operate a single shaft. The tie -up consists of cords or similar mech anical linkages tying the treadles to the lams that actually lift or lower the shaft.On tre adle operated looms the number of sheds i s limite d by the number",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000013.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000014",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "ar by the g overn ment. While un der const ruc tio n th e shi ps h ad their forward lift e nlarged t o take non-folding aircraft",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000014.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000015",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "new exp ression pat terns and functions.C hime ric ge nes f orm w hen duplicati on deletion or incomplet e retrotranspositio n combine p ortions of two d",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000015.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000016",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "the national women's curling championship.The Kingston P anthers Rugby Football Club was founded in 1959, and from that moment on ward has established a reputation as a strong community player. KPRFC is a non-pro fit organization answering directly to the Eastern Ont ario Rugby Union , the Ontario",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000016.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000017",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "egori es, ba sed on its wav elength; t hese a re ref erred to as UV-A , UV-B , and UV-C .U V-C, which is very harmful to all living things, i s entirel y scre ened out b y a combi natio n of dio xygen and ozo ne by around altitude. UV-B r adiation c an be har",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000017.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000018",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "arse. Liv estock were slaughte red at the begin ning o f wint er. Beef was often sa lted, whi le pork was sal ted and smok ed. Bacon and sausages would b e s moke d in",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000018.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000019",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "ut Marko.Racing career.Beginnings.Rindt drove his first race at the \"Flugplatzrennen\" in 1961 in his grandmother's Simca Montlhry. After missing t he official application period he only entered after a friendly high-ranking motorsport functiona ry from Graz intervened on his behalf. During the race he was black flagge d for his dangerous driving style and therefore disqualified he did not immed iately return to the pit lane as he was unaware of the regul ations. Rindt entered sev eral ralli es with hi s Simca b ut did not ac hieve good re sults. It w as only when he was pr ovided with a race- prepared Alfa R omeo GT 130 0 at cost price and wit h free servicing b y a local deale r that he becam e more successful. In the Alfa Rom eo he achieved eight victori es.In 1963 Rindt switched to Form ula Junior with th e assistance",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000019.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000020",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "n response b ut that they did show th at response when instru cted to i gnore gramma tical acceptab ility and only jud ge whether or not the se ntences \"made sense\".Prob e verification.Some studies use a \"probe ver ification\" task rather t han an overt accep tability judgment; in this paradigm, each experiment al sentence is followed by a \"probe word\", and subjects must a nswer whethe r or not th e probe word had app eared in the se ntenc e. Thi s tas k, like the ac cept ability j udg ment t ask, en sures that subje cts are r eading or liste ning a",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000020.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000021",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "outh of Kew Garde ns. The Wis consin Glacier retr eated from Long Island some 20000 years ago lea ving behind the hills th at now are part of Forest Par k. The park was hom e to the Rockaway Delawa re and Lenape Native A mericans until Dutch West In di a C o m pa ny s ettler s arriv ed in 163 4 and began estab lishing towns and pus hing the tribes o ut. The park c ontains the lar",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000021.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000022",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "three-quarters of th e way from H awaii to Indonesia at Geographic coor dinatesMap re ferences are Oc eania and Micronesia.Dimensio ns.The country's total area is four times the size of Washin gton, D.C. in the U.S.The combined coastlines of the cou ntry's 607 islands equal .Maritime claims: The country's 607 islands var y fro m hi gh mo un tain ous ones to low c oral atolls. G eologically, there are v olcanic rock outcroppi ngs on the islands of Poh npei, Kosrae, and C huu k.E xtre me point s.Th",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000022.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000023",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "ns, such as the Gr eek Orthodox or M elkite Catholic, to all ow tonsured altar serv ers to also vest in the or arion, worn cro ssed over the b ack like that of a subd eacon but with t he ends hanging parall el in front. Among the Ru ssians, however, the orarion is no t usually worn by serv ers, but only by d uly or dain ed subdeacons and deacons, with the excep tion th at la ym en w ho are bl ess ed to perfo rm some of the f unctions o f subdeacons may so metimes be bl essed to wear t he orar.Before vesting th e server must fold h is stichario n and bring it to t he priest for him to bless. The p riest blesses and lays his han d on the folde d sticharion. T he server kis ses the priests blessing.The minim",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000023.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000024",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "love of bou ncing. As he say s himself \"Bouncing is wha t Tiggers do best.\" Tigger ne ver refers to himself as a tiger but as a \"Tigger\". Although he ofte n refers to himself in the third pe rson p lural (e.g. \"Tiggers don't like honey!\") he maintains that he is \"the only one\".I",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000024.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000025",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "are mile (415.7 /km2). There were 2204 housing unit s at an a verage densit y of 439.8 per s quare mil e (169.9/km2) . The r acial makeu p of the to wn was 42.86% White 55.23 % Afri can Ame rican 0.20% N ativ e American 0.63% As",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000025.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000026",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "Bueno s Aires. Expectat ions of the team wer e high some ev en naming t hem as favorit es to win t he tournament. Colombia was a ssigned to the Gr oup A with the hosts Uni ted States Romania and Switzerland. During the tourn ament int ernal conf lict within Colomb ia proved t o be detrime ntal a nd h armful f or the Colombi an squad as the team was distracted fr om their main goal. Colo mbia only earne d one win over Switzerlan d and suffered two losses which would eliminate th em in the first phase. The first m atch a gainst Rom ania ended",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000026.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000027",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "ong gi ven Lisp nickna mes su ch a s \"Los t In S tupi d Pa renth eses \", or \" Lots of I rri tatin g S upe rfluo us Par ent hes es\". Ho wever, the S-expre ssion syntax is also res ponsible for muc h of L isp's p ower: t he syntax is extr emely re gular, w hich facilitates manip ulation by computer. However, the synt ax of Lis p is not limited to traditio nal parenthes es notatio n. It can b e extended to incl",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000027.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000028",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "m t he rel igio us point of view, the population was 85.8% Eastern Orthodox, 8.3% Old-Rite Lipovan Orthodox, 2.8% Muslim, 1.5% Roman Cat holic, 0.6% Lutheran, as well as other minorities.Urban population.In 1 930, the county's urban population was 41,632 inhabitants, comprising 64.7% Romanians, 12.8% Russians, 5.5% Tur ks, 4.4% Greeks, 3.3 % Bulgarians, 2.5% Jew s, 0.8% Germans , as well as other minorit ies. Mother tongues among the urban population were Romanian (69.4 %), followed by Russian (15.0%), Turkish (5.",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000028.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000029",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "in the s ame ground s.After the expulsion of Knigsberg 's German pop ulation at t he end of World War II the U niversity of Knigs berg whe re Kan t taught was repla ced by th e Rus sian-la ngua ge Kalini ngrad State Universi ty",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000029.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000030",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "cells.Abbot's privat e chapel.On the first fl oor to the west o f the south cloister side st ood the abbot' s priva te ch apel. I t was a ccessed by an extant late 14t h century stone spira l staircase which also led to the gu esten hall. The blocked door way can still be seen in the outside east wall of the building.The piscina can still be seen on the north aisle wall of the abbey. Abbot's hall.This room including the r oof dates from the early 15th century but the windows are modern. It is mentioned i n 1436 whe n Bishop Neville",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000030.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000031",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "cognize d by th e Nat ional In stitute f or Occ upat ion al S afety an d Health a s a priorit y industr y sect or in the National O",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000031.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000032",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "rally understo od that the cause o f quarrel was Maclellan 's refusal to joi n the allia nce. The Earl of Douglas outrag ed wi",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000032.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000033",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "ama .Early life.Lanca ster was born on November 2 1913 in Manhattan New York at his parents' home at 209 East 106th Street the son of Elizabeth and mailman James Lancaster. Both of his parents were Protestants of working-class ori gin. All four of his g randparents were im migrants from Ir eland to the United State s from the province of Ulster his mat ernal grandp arents were from Belfast and were descenda nts of English immigrants to Irel and.Lancaster grew up in East Harlem an d spent much of his time o n the streets. He developed a great interest a nd skill in gymnastics whil e attending DeWitt Clinton High School where he was a basketball star. B",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000033.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000034",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "found on th e legs. Since crabs use their first two p airs of pleo pods for sperm tra nsfer this arrang ement has changed. As the mal e abdomen evolved into a sli mmer shape the go nopores have mo ved toward the m idline away from the legs a nd onto the sternum. A similar cha nge occurred independently with the female gonop ores. The movement of the female gon opore to the sternum defines the clade Eub rachyura and the later change i",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000034.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000035",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "the name of Tilton Reynolds owned the l and in what is today Reynol dsville. He began selling lots of property in the hopes of starting a town. O ver the course of the 19th century, Reynoldsvi lle would grow into the town that is it is today. R eynoldsville would grow its indus tries in the way of silk mills, brick and tile works, a tanner y, a macaroni factory, and an asbest",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000035.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000036",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "wh en th ey pu blishe d t heir model of D NA w as to a p ubl ishe d art icle that included Sven Furberg's DNA model t hat had the b ases on the inside. Thus the Watso n and Crick mo del was not th e first \"bases in\" model to be proposed. F urberg's resul ts had also provide d the correct orientatio n of t he DN A sug ars wit h resp",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000036.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000037",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": ", 20.2% from 45 to 64, and 22.3% who were 65 years of age or older. The me dian age was 40 years. For every 100 female s, there we",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000037.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000038",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "more reliable and more precise than the older NAWASS and all t he IAF Jaguars had it as stan dard. The Jaguar was found to be a l ong-range fast stable and effective st rike aircraft in IAF s ervice. Ano ther important up grade was the M aritime Strik e version fitted with a radar and powerful British ant",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000038.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000039",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "ble Cecil. R. Oldham, a Democrat, who was las t ele cte d in 2 016. Br adley Moo n won t he Republican prim ary on March 3, 2020, and ha d no opponent for the November 3, 2020, gene ral election.Public libraries.The Chambers County Librar y System operates three libraries in the county. Transporta tion.The county opera tes two airpo",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000039.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000040",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "ts.1898\u20131 914 beginning. The first tr uck manufactu red at K opivnice i n 1898 was a flatbe d with 2 liqui d-cooled side -b y-s id e-moun ted tw o-cyli nder Be nz en",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000040.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000041",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "20.1% had children under the age of 18 li ving with them, 32.2% we re married couples living together, 8.7% had a female householder with no hus band present, and 56.6% were no n-families. 36.6% of all households were m ade up of individuals, and 8.1% had someo ne living alone who was 65 ye ars of age or older. The average househ old si ze was 2. 14 and t he avera ge fam ily size was 2.83.I n the city, t he popula tion was sp read out , with 14.9",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000041.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000042",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "n, the \"Mes siah Stradiv arius\" v iolin\u2014on dis play in t he Ashmole an Museum i n Oxford, England\u2014 has not been pla yed at all in re cent year s.Referenc es.Extern al links.Histo rical books Apraxia i s a motor d isorder caus",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000042.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000043",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "the professional military particularly the part that stated it would sta nd even if captured commandos were in proper uniforms . The order included measures designed to force military staff to obey its provisions .Some commanders including Rommel had refused to relay the order to the ir troops since they consider ed it to be c",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000043.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000044",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "uty within her subjects and herself.Background. Cox has \"dedicated her career to deconstructing stereo types and to reconfiguring the black woman's bo dy, using her nude form as a subject.\" She us es herself as a primary model in order to promot e an idea of \"self-love\" as articulated by bell hoo ks in her book \"Sisters of the Yam\", because as Cox writes in an arti st's statement, \"slavery stripped black me n and women of their dignity and identity and that history continu es to have an adverse aff ect [sic] on the African A merican ps yche.\" One of Cox's main motivations h as always be",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000044.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000045",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "speed limits.Just ove r half of the German autobahns h ave only an advis ory speed limit 15% have temporary speed limits due to weather or traff ic conditions and 33 % have permanent speed limits accor ding to 2008 estimates. The ad visory speed limit appl ies to any road in Germany outside of towns w hich is either a du al carriageway or featu res at least two lanes p er direction regar dless of its classif ication unless the re is a spe ed limit posted although it is l ess common for non-a utobahn roads to be unrestric ted. All ot her roads i n Germany",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000045.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000046",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "e all Allied forc es who op erated b ehind Na zi lines, t he Jed bur gh s were subject to tor ture and execution in t he event of c apture, under Hitler's notorious Comman do Order. Beca",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000046.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000047",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "nds o f Port Shel ter R ocky Harbo ur on Sai Kun g Pe ni ns ul a on Cl ea r W ater Bay Peninsula as well as other la nd areas of t he District. A temple locat ed on High Island da tes back to 1 741.S ai K ung market t own was ex pa nded into the local town centre of the d istri ct after t",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000047.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000048",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "crimes that ar e se en as i ntolerable to the society within mainland China and t he People's Republic of China. There are some cases that hav e been held wrongly.At least four pe ople have been considered wrongfully executed by PRC courts.W ei Qing'an (, circa 1951 1984) was a Chinese citizen who was executed for the rape of Liu, a woma",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000048.jpg"
+    ]
+  },
+  {
+    "id": "synthdog_en_000049",
+    "data_source": "synthdog_en",
+    "messages": [
+      {
+        "content": "<image>\nOCR this image section by section, from top to bottom, and left to right. Do not insert line breaks in the output text. If a word is split due to a line break in the image, use a space instead.",
+        "role": "user"
+      },
+      {
+        "content": "tie.Upon learning of this Carey bec ame angry t hat the producers made it seem he h ad a deciding vote in t he outcome of the s how calling the situation \"crooked and dishonest. \" It was also reveale d that some of the finalists who advanced were clients or employ ees of the producers or dire ctors of the show. According",
+        "role": "assistant"
+      }
+    ],
+    "images": [
+      "/mnt/lingjiejiang/multimodal_code/data/llava_onevision/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/synthdog_en_000049.jpg"
+    ]
+  }
+]
